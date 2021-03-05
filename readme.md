@@ -20,3 +20,15 @@ shows information about the specific movie
 - The Movie Database API https://developers.themoviedb.org/3/getting-started/introduction
 - MediaPlayer https://developer.android.com/guide/topics/media/mediaplayer
 - YouTube Android Player API https://developers.google.com/youtube/android/player
+
+**Movie Database API Usage:**
+- GET /genre/movie/list
+- GET /discover/movie
+- GET /movie/{movie_id}
+- GET /movie/{movie_id}/videos
+- GET /movie/{movie_id}/credits
+- GET /keyword/{keyword_id}/movies
+
+**MediaPlayer or Youtube Android Player API usage:**
+-Per instructor: _"Using an implicit intent to launch YouTube or Chrome wouldn't be enough to satisfy the extra feature requirement, since we covered implicit intents in class.  However, if you had a player embedded right in the app, that would be perfect"._ 
+-Need to use something like mediaPlayer or Youtube Andriod Player API
