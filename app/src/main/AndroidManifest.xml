@@ -26,10 +26,12 @@
         </activity>
         <activity android:name=".SearchFragment" >
             <intent-filter>
+                // Declare an activity to accept the action search intent
                 <action android:name="android.intent.action.SEARCH" />
             </intent-filter>
-            <meta-data android:name="android.app.searchable"
-                android:resource="@xml/layout/search"/>
+            //
+            <meta-data android:name="android.app.fragment_search"
+                android:resource="@xml/layout/fragment_search"/>
         </activity>
     </application>
 
