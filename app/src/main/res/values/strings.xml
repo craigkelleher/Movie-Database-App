@@ -11,4 +11,7 @@
     <string name="genre5">Comedy</string>
     <string name="genre6">Science Fiction</string>
 
+    <string name="cast">Cast</string>
+    <string name="back">Back</string>
+
 </resources>

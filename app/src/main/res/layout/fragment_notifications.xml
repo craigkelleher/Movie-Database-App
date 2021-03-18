@@ -16,6 +16,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:ellipsize="end"
             android:layout_margin="10dp"
             android:text="@string/genre1"
             android:textStyle="bold"
@@ -40,6 +41,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:ellipsize="end"
             android:layout_margin="10dp"
             android:text="@string/genre2"
             android:textStyle="bold"
@@ -64,6 +66,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:ellipsize="end"
             android:layout_margin="10dp"
             android:text="@string/genre3"
             android:textStyle="bold"
@@ -88,6 +91,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:ellipsize="end"
             android:layout_margin="10dp"
             android:text="@string/genre4"
             android:textStyle="bold"
@@ -112,6 +116,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:ellipsize="end"
             android:layout_margin="10dp"
             android:text="@string/genre5"
             android:textStyle="bold"
@@ -136,6 +141,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:ellipsize="end"
             android:layout_margin="10dp"
             android:text="@string/genre6"
             android:textStyle="bold"
