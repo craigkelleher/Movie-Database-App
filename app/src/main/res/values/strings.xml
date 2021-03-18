@@ -2,5 +2,13 @@
     <string name="app_name">MovieDBApp</string>
     <string name="title_home">Home</string>
     <string name="title_search">Search</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_notifications">Genre</string>
+
+    <string name="genre1">Action</string>
+    <string name="genre2">Drama</string>
+    <string name="genre3">Animation</string>
+    <string name="genre4">Fantasy</string>
+    <string name="genre5">Comedy</string>
+    <string name="genre6">Science Fiction</string>
+
 </resources>
