@@ -152,7 +152,7 @@ public class Movie implements Parcelable {
         this.video = video;
     }
 
-    public Double getVoteAverage() {
+    public double getVoteAverage() {
         return voteAverage;
     }
 
