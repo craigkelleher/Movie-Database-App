@@ -71,6 +71,7 @@ public class MovieResult {
         public MovieResult build() {
             return new MovieResult(this);
         }
+
     }
 
     public static Builder newBuilder(int id, String title) {

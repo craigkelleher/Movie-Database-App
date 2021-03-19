@@ -1,6 +1,4 @@
 package com.example.moviedbapp.ui.search;
-
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.net.ConnectivityManager;
@@ -11,6 +9,9 @@ import android.util.Log;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.moviedbapp.MainActivity;
 import com.example.moviedbapp.R;
 import org.json.JSONArray;
@@ -25,13 +26,13 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
 
-public class SearchResultActivity extends Activity {
+public class SearchResultActivity extends AppCompatActivity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_imdbsearch_result);
-        getActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         Intent intent = getIntent();
         String query = intent.getStringExtra(MainActivity.EXTRA_QUERY);
         ConnectivityManager connMgr = (ConnectivityManager)
@@ -57,7 +58,6 @@ public class SearchResultActivity extends Activity {
     }
     
     private class TMDBQueryManager extends AsyncTask {
-        
         private final String TMDB_API_KEY = "491cd63d741160db421cc987eb59ec33";
         private static final String DEBUG_TAG = "TMDBQueryManager";
         
