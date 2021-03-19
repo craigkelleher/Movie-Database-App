@@ -350,8 +350,8 @@ public class NotificationsFragment extends Fragment
         int currVis;
 
         if (TextUtils.equals(key, getString(R.string.pref_action_key))) {
-            currVis = recyclerView1.getVisibility();
-            if (currVis == 0) {
+            System.out.println(sharedPreferences.getBoolean(getString(R.string.pref_action_key),true));
+            if (!sharedPreferences.getBoolean(getString(R.string.pref_action_key),true)) {
                 recyclerView1.setVisibility(View.GONE);
                 actionView.setVisibility(View.GONE);
             }else{
@@ -360,9 +360,7 @@ public class NotificationsFragment extends Fragment
             }
         }
         if (TextUtils.equals(key, getString(R.string.pref_drama_key))) {
-            System.out.println("DETECTED CHANGE IN DRAMA");
-            currVis = recyclerView2.getVisibility();
-            if (currVis == 0) {
+            if (!sharedPreferences.getBoolean(getString(R.string.pref_drama_key),true)) {
                 recyclerView2.setVisibility(View.GONE);
                 dramaView.setVisibility(View.GONE);
             }else{
@@ -371,9 +369,7 @@ public class NotificationsFragment extends Fragment
             }
         }
         if (TextUtils.equals(key, getString(R.string.pref_animation_key))) {
-            System.out.println("DETECTED CHANGE IN ANIMATION" + recyclerView3.getVisibility());
-            currVis = recyclerView3.getVisibility();
-            if (currVis == 0) {
+            if (!sharedPreferences.getBoolean(getString(R.string.pref_animation_key),true)) {
                 recyclerView3.setVisibility(View.GONE);
                 animeView.setVisibility(View.GONE);
             }else{
@@ -382,9 +378,7 @@ public class NotificationsFragment extends Fragment
             }
         }
         if (TextUtils.equals(key, getString(R.string.pref_fantasy_key))) {
-            System.out.println("DETECTED CHANGE IN FANTASY");
-            currVis = recyclerView4.getVisibility();
-            if (currVis == 0) {
+            if (!sharedPreferences.getBoolean(getString(R.string.pref_fantasy_key),true)) {
                 recyclerView4.setVisibility(View.GONE);
                 fantasyView.setVisibility(View.GONE);
             }else{
@@ -393,9 +387,7 @@ public class NotificationsFragment extends Fragment
             }
         }
         if (TextUtils.equals(key, getString(R.string.pref_comedy_key))) {
-            System.out.println("DETECTED CHANGE IN COMEDY");
-            currVis = recyclerView5.getVisibility();
-            if (currVis == 0) {
+            if (!sharedPreferences.getBoolean(getString(R.string.pref_comedy_key),true)) {
                 recyclerView5.setVisibility(View.GONE);
                 comedyView.setVisibility(View.GONE);
             }else{
@@ -404,19 +396,14 @@ public class NotificationsFragment extends Fragment
             }
         }
         if (TextUtils.equals(key, getString(R.string.pref_scifi_key))) {
-            System.out.println("DETECTED CHANGE IN SCI" + recyclerView6.getVisibility());
-            System.out.println(this.sharedPreferences.getBoolean(
-                    getString(R.string.pref_scifi_key),true
-            ));
-            currVis = recyclerView6.getVisibility();
-            if (currVis == 0) {
+            if (!sharedPreferences.getBoolean(getString(R.string.pref_scifi_key),true)) {
                 recyclerView6.setVisibility(View.GONE);
                 scifiView.setVisibility(View.GONE);
             }else{
                 recyclerView6.setVisibility(View.VISIBLE);
                 scifiView.setVisibility(View.VISIBLE);
             }
+            }
         }
     }
 
-}
