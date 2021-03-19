@@ -35,7 +35,7 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.HomeViewHolder
 
     @Override
     public void onBindViewHolder(final HomeAdapter.HomeViewHolder holder, int position) {
-        holder.title.setText(movieList.get(position).getOriginalTitle());
+        holder.title.setText(movieList.get(position).getTitle());
         String cover = "https://image.tmdb.org/t/p/w500" + movieList.get(position).getPosterPath();
 
         Glide.with(context).load(cover).into(holder.thumbnail);
@@ -55,6 +55,7 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.HomeViewHolder
             super(itemView);
             title = (TextView) itemView.findViewById(R.id.tvGenreMovieTitle);
             thumbnail = (ImageView) itemView.findViewById(R.id.ivGenreMovieCover);
+            thumbnail.setClipToOutline(true);
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override

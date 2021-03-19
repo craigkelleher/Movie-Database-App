@@ -16,7 +16,6 @@ import com.example.moviedbapp.MovieDetail;
 import com.example.moviedbapp.R;
 import com.example.moviedbapp.ui.notifications.model.Movie;
 
-import java.text.BreakIterator;
 import java.util.List;
 
 public class GenreAdapter extends RecyclerView.Adapter<GenreAdapter.GenreViewHolder> {
@@ -37,7 +36,7 @@ public class GenreAdapter extends RecyclerView.Adapter<GenreAdapter.GenreViewHol
 
     @Override
     public void onBindViewHolder(final GenreAdapter.GenreViewHolder holder, int position) {
-        holder.title.setText(movieList.get(position).getOriginalTitle());
+        holder.title.setText(movieList.get(position).getTitle());
         String cover = "https://image.tmdb.org/t/p/w500" + movieList.get(position).getPosterPath();
 
         Glide.with(context).load(cover).into(holder.thumbnail);
@@ -57,6 +56,7 @@ public class GenreAdapter extends RecyclerView.Adapter<GenreAdapter.GenreViewHol
             super(itemView);
             title = (TextView) itemView.findViewById(R.id.tvGenreMovieTitle);
             thumbnail = (ImageView) itemView.findViewById(R.id.ivGenreMovieCover);
+            thumbnail.setClipToOutline(true);
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
