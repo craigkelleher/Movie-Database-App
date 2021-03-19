@@ -7,4 +7,9 @@
         android:title="@string/back"
         android:icon="@drawable/ic_baseline_arrow_back_ios_24"
         app:showAsAction="ifRoom" />
+    <item android:id="@+id/search"
+        android:title="@string/search_title"
+        android:icon="@drawable/ic_search"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="collapseActionView|ifRoom" />
 </menu>

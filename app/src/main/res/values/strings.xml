@@ -13,5 +13,10 @@
 
     <string name="cast">Cast</string>
     <string name="back">Back</string>
+    <string name="app_label">MovieDBApp</string>
+    <string name="search_hint">Please enter the name of a movie to search</string>
+    <string name="search_title">Click here to Search</string>
+    <string name="popular">Popular</string>
+    <string name="most_popular_movies">Most Popular Movies</string>
 
 </resources>
