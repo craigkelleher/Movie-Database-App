@@ -23,7 +23,7 @@ public class SearchFragment extends Fragment {
         searchViewModel =
                 new ViewModelProvider(this).get(SearchViewModel.class);
         View root = inflater.inflate(R.layout.search, container, false);
-        final TextView textView = root.findViewById(R.id.text_search);
+        final TextView textView = root.findViewById(R.id.edit_message);
         searchViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
