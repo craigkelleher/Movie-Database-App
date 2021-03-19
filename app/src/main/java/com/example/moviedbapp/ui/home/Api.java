@@ -1,6 +1,6 @@
 package com.example.moviedbapp.ui.home;
 
-import com.example.moviedbapp.ui.genres.model.GenreMovieRes;
+import com.example.moviedbapp.ui.notifications.model.GenreMovieRes;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

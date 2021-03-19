@@ -24,7 +24,7 @@ import com.example.moviedbapp.model.Cast;
 import com.example.moviedbapp.model.DetailMovieRes;
 import com.example.moviedbapp.model.Video;
 import com.example.moviedbapp.model.VideoRes;
-import com.example.moviedbapp.ui.genres.model.Movie;
+import com.example.moviedbapp.ui.notifications.model.Movie;
 import com.google.android.youtube.player.YouTubePlayerView;
 
 import java.util.List;

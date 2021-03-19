@@ -1,4 +1,4 @@
-package com.example.moviedbapp.ui.genres;
+package com.example.moviedbapp.ui.notifications;
 
 import android.content.Context;
 import android.content.Intent;
@@ -14,7 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.example.moviedbapp.MovieDetail;
 import com.example.moviedbapp.R;
-import com.example.moviedbapp.ui.genres.model.Movie;
+import com.example.moviedbapp.ui.notifications.model.Movie;
 
 import java.util.List;
 

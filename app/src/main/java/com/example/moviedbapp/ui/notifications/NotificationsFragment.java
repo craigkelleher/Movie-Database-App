@@ -1,9 +1,8 @@
-package com.example.moviedbapp.ui.genres;
+package com.example.moviedbapp.ui.notifications;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.preference.Preference;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -25,10 +24,10 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.example.moviedbapp.R;
 import com.example.moviedbapp.SettingsActivity;
-import com.example.moviedbapp.ui.genres.data.Client;
-import com.example.moviedbapp.ui.genres.data.Service;
-import com.example.moviedbapp.ui.genres.model.GenreMovieRes;
-import com.example.moviedbapp.ui.genres.model.Movie;
+import com.example.moviedbapp.ui.notifications.data.Client;
+import com.example.moviedbapp.ui.notifications.data.Service;
+import com.example.moviedbapp.ui.notifications.model.GenreMovieRes;
+import com.example.moviedbapp.ui.notifications.model.Movie;
 import com.takusemba.multisnaprecyclerview.MultiSnapRecyclerView;
 
 import java.util.List;
@@ -37,10 +36,10 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class GenresFragment extends Fragment
+public class NotificationsFragment extends Fragment
                 implements SharedPreferences.OnSharedPreferenceChangeListener
 {
-    private GenresViewModel notificationsViewModel;
+    private NotificationsViewModel notificationsViewModel;
     private GenreAdapter adapter1;
     private GenreAdapter adapter2;
     private GenreAdapter adapter3;
@@ -79,7 +78,7 @@ public class GenresFragment extends Fragment
     }
 
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        notificationsViewModel =new ViewModelProvider(this).get(GenresViewModel.class);
+        notificationsViewModel =new ViewModelProvider(this).get(NotificationsViewModel.class);
         View root = inflater.inflate(R.layout.fragment_genres, container, false);
         this.actionView = root.findViewById(R.id.tv_action);
         this.dramaView = root.findViewById(R.id.tv_drama);

@@ -17,6 +17,6 @@
 
     <fragment
         android:id="@+id/navigation_notifications"
-        android:name="com.example.moviedbapp.ui.genres.GenresFragment"
+        android:name="com.example.moviedbapp.ui.notifications.NotificationsFragment"
         tools:layout="@layout/fragment_genres" />
 </navigation>

@@ -1,4 +1,4 @@
-package com.example.moviedbapp.ui.genres.model;
+package com.example.moviedbapp.ui.notifications.model;
 
 import android.os.Parcel;
 import android.os.Parcelable;

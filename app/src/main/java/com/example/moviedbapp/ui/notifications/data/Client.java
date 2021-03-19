@@ -1,4 +1,4 @@
-package com.example.moviedbapp.ui.genres.data;
+package com.example.moviedbapp.ui.notifications.data;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
