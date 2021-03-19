@@ -1,23 +1,18 @@
 package com.example.moviedbapp;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.NavUtils;
-import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -29,16 +24,8 @@ import com.example.moviedbapp.model.Cast;
 import com.example.moviedbapp.model.DetailMovieRes;
 import com.example.moviedbapp.model.Video;
 import com.example.moviedbapp.model.VideoRes;
-import com.example.moviedbapp.ui.notifications.GenreAdapter;
-import com.example.moviedbapp.ui.notifications.NotificationsFragment;
-import com.example.moviedbapp.ui.notifications.data.Client;
-import com.example.moviedbapp.ui.notifications.data.Service;
-import com.example.moviedbapp.ui.notifications.model.GenreMovieRes;
-import com.example.moviedbapp.ui.notifications.model.Movie;
-import com.google.android.youtube.player.YouTubeInitializationResult;
-import com.google.android.youtube.player.YouTubePlayer;
+import com.example.moviedbapp.ui.genres.model.Movie;
 import com.google.android.youtube.player.YouTubePlayerView;
-import com.takusemba.multisnaprecyclerview.MultiSnapRecyclerView;
 
 import java.util.List;
 

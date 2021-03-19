@@ -11,8 +11,9 @@
             android:layout_width="120dp"
             android:layout_height="150dp"
             android:id="@+id/ivGenreMovieCover"
-            android:background="?attr/selectableItemBackgroundBorderless"
-            android:scaleType="fitXY"/>
+            android:background="@drawable/shape"
+            android:scaleType="fitXY"
+            />
 
         <TextView
             android:id="@+id/tvGenreMovieTitle"
@@ -20,7 +21,8 @@
             android:layout_height="wrap_content"
             android:maxLines="1"
             android:ellipsize="end"
-            android:textSize="18sp"
-            android:gravity="center_horizontal"/>
+            android:textSize="15sp"
+            android:gravity="center_horizontal"
+            android:textAppearance="?attr/textAppearanceBody1"/>
 
     </LinearLayout>

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MovieDBApp</string>
+    <string name="app_name">Movie App</string>
     <string name="title_home">Home</string>
     <string name="title_search">Search</string>
     <string name="title_notifications">Genre</string>

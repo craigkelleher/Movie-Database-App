@@ -15,10 +15,9 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.example.moviedbapp.R;
-import com.example.moviedbapp.ui.notifications.data.Client;
-import com.example.moviedbapp.ui.notifications.data.Service;
-import com.example.moviedbapp.ui.notifications.model.GenreMovieRes;
-import com.example.moviedbapp.ui.notifications.model.Movie;
+import com.example.moviedbapp.ui.genres.data.Client;
+import com.example.moviedbapp.ui.genres.model.GenreMovieRes;
+import com.example.moviedbapp.ui.genres.model.Movie;
 import com.takusemba.multisnaprecyclerview.MultiSnapRecyclerView;
 
 import java.util.List;
