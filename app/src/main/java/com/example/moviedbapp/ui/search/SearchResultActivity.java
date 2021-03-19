@@ -62,7 +62,7 @@ public class SearchResultActivity extends AppCompatActivity {
         private static final String DEBUG_TAG = "TMDBQueryManager";
         
         @Override
-        protected ArrayList<MovieResult> doInBackground(Object... params) {
+        protected ArrayList<MovieResult> doInBackground(Object[] params) {
             try {
                 return searchIMDB((String) params[0]);
             } catch (IOException e) {
