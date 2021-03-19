@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/pref_genre_title">
+        <CheckBoxPreference
+            android:title="@string/pref_action_title"
+            android:key="@string/pref_action_key"
+            android:defaultValue="true" />
+        <CheckBoxPreference
+            android:title="@string/pref_drama_title"
+            android:key="@string/pref_drama_key"
+            android:defaultValue="true" />
+        <CheckBoxPreference
+            android:title="@string/pref_animation_title"
+            android:key="@string/pref_animation_key"
+            android:defaultValue="true" />
+        <CheckBoxPreference
+            android:title="@string/pref_fantasy_title"
+            android:key="@string/pref_fantasy_key"
+            android:defaultValue="true" />
+        <CheckBoxPreference
+            android:title="@string/pref_comedy_title"
+            android:key="@string/pref_comedy_key"
+            android:defaultValue="true" />
+        <CheckBoxPreference
+            android:title="@string/pref_scifi_title"
+            android:key="@string/pref_scifi_key"
+            android:defaultValue="true" />
+    </PreferenceCategory>
+</PreferenceScreen>
