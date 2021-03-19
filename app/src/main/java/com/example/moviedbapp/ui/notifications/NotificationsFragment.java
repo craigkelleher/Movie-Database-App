@@ -102,7 +102,7 @@ public class NotificationsFragment extends Fragment {
             Client client = new Client();
             Service service = Client.getClient().create(Service.class);
             loadingIndicatorPB1 = root.findViewById(R.id.pb_loading_indicator1);
-            Call<GenreMovieRes> req = service.getMovieByGenre("491cd63d741160db421cc987eb59ec33","en-US", "popularity.desc", "false", "false", "1", "28");
+            Call<GenreMovieRes> req = service.getMovieByGenre("491cd63d741160db421cc987eb59ec33","en-US", "popularity.desc", "false", "true", "1", "28");
             loadingIndicatorPB1.setVisibility(View.VISIBLE);
             req.enqueue(new Callback<GenreMovieRes>() {
                 @Override
@@ -133,7 +133,7 @@ public class NotificationsFragment extends Fragment {
             Client client = new Client();
             Service service = Client.getClient().create(Service.class);
             loadingIndicatorPB2 = root.findViewById(R.id.pb_loading_indicator2);
-            Call<GenreMovieRes> req = service.getMovieByGenre("491cd63d741160db421cc987eb59ec33","en-US", "popularity.desc", "false", "false", "1", "18");
+            Call<GenreMovieRes> req = service.getMovieByGenre("491cd63d741160db421cc987eb59ec33","en-US", "popularity.desc", "false", "true", "1", "18");
             loadingIndicatorPB2.setVisibility(View.VISIBLE);
             req.enqueue(new Callback<GenreMovieRes>() {
                 @Override
@@ -164,7 +164,7 @@ public class NotificationsFragment extends Fragment {
             Client client = new Client();
             Service service = Client.getClient().create(Service.class);
             loadingIndicatorPB3 = root.findViewById(R.id.pb_loading_indicator3);
-            Call<GenreMovieRes> req = service.getMovieByGenre("491cd63d741160db421cc987eb59ec33","en-US", "popularity.desc", "false", "false", "1", "16");
+            Call<GenreMovieRes> req = service.getMovieByGenre("491cd63d741160db421cc987eb59ec33","en-US", "popularity.desc", "false", "true", "1", "16");
             loadingIndicatorPB3.setVisibility(View.VISIBLE);
             req.enqueue(new Callback<GenreMovieRes>() {
                 @Override
@@ -195,7 +195,7 @@ public class NotificationsFragment extends Fragment {
             Client client = new Client();
             Service service = Client.getClient().create(Service.class);
             loadingIndicatorPB4 = root.findViewById(R.id.pb_loading_indicator4);
-            Call<GenreMovieRes> req = service.getMovieByGenre("491cd63d741160db421cc987eb59ec33", "en-US", "popularity.desc", "false", "false", "1", "14");
+            Call<GenreMovieRes> req = service.getMovieByGenre("491cd63d741160db421cc987eb59ec33", "en-US", "popularity.desc", "false", "true", "1", "14");
             loadingIndicatorPB4.setVisibility(View.VISIBLE);
             req.enqueue(new Callback<GenreMovieRes>() {
                 @Override
@@ -226,7 +226,7 @@ public class NotificationsFragment extends Fragment {
             Client client = new Client();
             Service service = Client.getClient().create(Service.class);
             loadingIndicatorPB5 = root.findViewById(R.id.pb_loading_indicator5);
-            Call<GenreMovieRes> req = service.getMovieByGenre("491cd63d741160db421cc987eb59ec33","en-US", "popularity.desc", "false", "false", "1", "35");
+            Call<GenreMovieRes> req = service.getMovieByGenre("491cd63d741160db421cc987eb59ec33","en-US", "popularity.desc", "false", "true", "1", "35");
             loadingIndicatorPB5.setVisibility(View.VISIBLE);
             req.enqueue(new Callback<GenreMovieRes>() {
                 @Override
@@ -257,7 +257,7 @@ public class NotificationsFragment extends Fragment {
             Client client = new Client();
             Service service = Client.getClient().create(Service.class);
             loadingIndicatorPB6 = root.findViewById(R.id.pb_loading_indicator6);
-            Call<GenreMovieRes> req = service.getMovieByGenre("491cd63d741160db421cc987eb59ec33", "en-US", "popularity.desc", "false", "false", "1", "12");
+            Call<GenreMovieRes> req = service.getMovieByGenre("491cd63d741160db421cc987eb59ec33", "en-US", "popularity.desc", "false", "true", "1", "12");
             loadingIndicatorPB6.setVisibility(View.VISIBLE);
             req.enqueue(new Callback<GenreMovieRes>() {
                 @Override

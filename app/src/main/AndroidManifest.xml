@@ -3,6 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.moviedbapp">
 
+    <queries>
+        <intent>
+            <action android:name="com.google.android.youtube.api.service.START" />
+        </intent>
+    </queries>
+
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -12,6 +18,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MovieDBApp">
+        <activity
+            android:name=".YoutubePlayer"
+            android:screenOrientation="landscape"
+            android:parentActivityName=".MovieDetail"/>
         <activity
             android:name=".MovieDetail"
             android:parentActivityName=".MainActivity"/>
