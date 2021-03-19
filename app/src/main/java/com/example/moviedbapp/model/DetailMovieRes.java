@@ -3,7 +3,6 @@ package com.example.moviedbapp.model;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-import com.example.moviedbapp.ui.notifications.model.Movie;
 import com.google.gson.annotations.SerializedName;
 
 import java.util.List;

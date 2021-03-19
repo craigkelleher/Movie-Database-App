@@ -1,4 +1,4 @@
-package com.example.moviedbapp.ui.notifications;
+package com.example.moviedbapp.ui.home;
 
 import android.content.Context;
 import android.content.Intent;
@@ -15,27 +15,26 @@ import com.bumptech.glide.Glide;
 import com.example.moviedbapp.MovieDetail;
 import com.example.moviedbapp.R;
 import com.example.moviedbapp.ui.notifications.model.Movie;
-
 import java.util.List;
 
-public class GenreAdapter extends RecyclerView.Adapter<GenreAdapter.GenreViewHolder> {
+public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.HomeViewHolder> {
     private List<Movie> movieList;
     private Context context;
 
-    public GenreAdapter(Context context, List<Movie> movieList){
+    public HomeAdapter(Context context, List<Movie> movieList){
         this.context = context;
         this.movieList = movieList;
     }
 
     @Override
-    public GenreAdapter.GenreViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public HomeAdapter.HomeViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
         View itemView = inflater.inflate(R.layout.genre_item, parent,false);
-        return new GenreViewHolder(itemView);
+        return new HomeViewHolder(itemView);
     }
 
     @Override
-    public void onBindViewHolder(final GenreAdapter.GenreViewHolder holder, int position) {
+    public void onBindViewHolder(final HomeAdapter.HomeViewHolder holder, int position) {
         holder.title.setText(movieList.get(position).getTitle());
         String cover = "https://image.tmdb.org/t/p/w500" + movieList.get(position).getPosterPath();
 
@@ -47,12 +46,12 @@ public class GenreAdapter extends RecyclerView.Adapter<GenreAdapter.GenreViewHol
         return movieList.size();
     }
 
-    public class GenreViewHolder extends RecyclerView.ViewHolder {
+    public class HomeViewHolder extends RecyclerView.ViewHolder {
 
         public TextView title;
         public ImageView thumbnail;
 
-        public GenreViewHolder(@NonNull View itemView) {
+        public HomeViewHolder(@NonNull View itemView) {
             super(itemView);
             title = (TextView) itemView.findViewById(R.id.tvGenreMovieTitle);
             thumbnail = (ImageView) itemView.findViewById(R.id.ivGenreMovieCover);

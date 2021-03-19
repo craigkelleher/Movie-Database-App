@@ -1,8 +1,9 @@
 <resources>
-    <string name="app_name">MovieDBApp</string>
+    <string name="app_name">Movie App</string>
     <string name="title_home">Home</string>
     <string name="title_search">Search</string>
     <string name="title_notifications">Genre</string>
+    <string name="action_settings_title">Settings</string>
 
     <string name="genre1">Action</string>
     <string name="genre2">Drama</string>
@@ -21,5 +22,23 @@
     <string name="most_popular_movies">Most Popular Movies</string>
     <string name="button_send">Search</string>
     <string name="edit_message">Enter a Movie Title to Search</string>
+    <string name="trailer">Watch Trailer</string>
+
+    <!-- Strings for genre preference -->
+    <string name="pref_genre_key" translatable="false">pref_genre</string>
+    <string name="pref_default_key">true</string>
+    <string name="pref_genre_title">Genre</string>
+    <string name="pref_action_key" translatable="false">pref_action</string>
+    <string name="pref_action_title">Action</string>
+    <string name="pref_drama_key" translatable="false">pref_drama</string>
+    <string name="pref_drama_title">Drama</string>
+    <string name="pref_animation_key" translatable="false">pref_animation</string>
+    <string name="pref_animation_title">Animation</string>
+    <string name="pref_fantasy_key" translatable="false">pref_fantasy</string>
+    <string name="pref_fantasy_title">Fantasy</string>
+    <string name="pref_comedy_key" translatable="false">pref_comedy</string>
+    <string name="pref_comedy_title">Comedy</string>
+    <string name="pref_scifi_key" translatable="false">pref_scifi</string>
+    <string name="pref_scifi_title">Science Fiction</string>
 
 </resources>

@@ -12,8 +12,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.example.moviedbapp.model.Cast;
-import com.example.moviedbapp.ui.notifications.GenreAdapter;
-import com.example.moviedbapp.ui.notifications.model.Movie;
 
 import java.util.List;
 
