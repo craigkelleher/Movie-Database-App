@@ -6,7 +6,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ProgressBar;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -14,17 +13,14 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.moviedbapp.MainActivity;
 import com.example.moviedbapp.R;
 import com.example.moviedbapp.ui.notifications.data.Client;
 import com.example.moviedbapp.ui.notifications.data.Service;
 import com.example.moviedbapp.ui.notifications.model.GenreMovieRes;
 import com.example.moviedbapp.ui.notifications.model.Movie;
 import com.takusemba.multisnaprecyclerview.MultiSnapRecyclerView;
-import com.example.moviedbapp.R;
-import java.util.ArrayList;
+
 import java.util.List;
 
 import retrofit2.Call;
@@ -37,7 +33,7 @@ public class HomeFragment extends Fragment {
     private HomeViewModel homeViewModel;
     private HomeAdapter homeAdapter;
     private MultiSnapRecyclerView popularRecyclerView;
-    private ProgressBar loadingIndicatorPB1;
+    private ProgressBar progressBar;
 
 
     public static Integer popularListId = R.id.popular_rv;
@@ -76,17 +72,17 @@ public class HomeFragment extends Fragment {
         try{
             Client client = new Client();
             Api api = Client.getClient().create(Api.class);
-            loadingIndicatorPB1 = root.findViewById(R.id.pb_loading_indicator1);
+            progressBar = root.findViewById(R.id.loading_bar);
 
             Call<GenreMovieRes> req = api.getMovies("ac1a3131b8737b85655bc6fe15c63e6d",sortCondition, "1");
 
-            loadingIndicatorPB1.setVisibility(View.VISIBLE);
+            progressBar.setVisibility(View.VISIBLE);
             req.enqueue(new Callback<GenreMovieRes>() {
                 @Override
                 public void onResponse(Call<GenreMovieRes> call, Response<GenreMovieRes> response) {
                     List<Movie> movies = response.body().getResults();
                     if(response.isSuccessful() && response.body() != null){
-                        loadingIndicatorPB1.setVisibility(View.INVISIBLE);
+                        progressBar.setVisibility(View.INVISIBLE);
 
                         MultiSnapRecyclerView recyclerView  = (MultiSnapRecyclerView) root.findViewById(recyclerViewId);
 
