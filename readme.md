@@ -1,5 +1,5 @@
 # CS-492-Final-Project
-Repository for CS 492 Final Project
+Repository for CS 492 Group Final Project
 
 **Introduction**
 The purpose of this project is to build a mobile application that allows users to get accurate movie information efficiently. The app will have a homepage that will allow the users to see the movies that are trending. Also, It will allow users to select a genre of movies to be displayed that will be shown based on their popularity. Furthermore, the
