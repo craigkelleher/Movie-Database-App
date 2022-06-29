@@ -1,7 +1,7 @@
 # CS-492-Final-Project
 Repository for CS 492 Group Final Project
 
-**Introduction**
+**Introduction:**
 
 The purpose of this project is to build a mobile application that allows users to get accurate movie information efficiently. The app will have a homepage that will allow the users to see the movies that are trending. Also, It will allow users to select a genre of movies to be displayed that will be shown based on their popularity. Furthermore, the
 users can search for some movies based on keywords. The user can select a movie to be shown more details about the film. Finally, the user can watch a trailer for the movie directly in the app through either an embedded Youtube Video or andriod native Media Player on YouTube via the detail activity for the movie.
@@ -34,4 +34,4 @@ shows information about the specific movie
 - GET /keyword/{keyword_id}/movies
 
 **MediaPlayer or Youtube Android Player API usage:**
--Per instructor: _"Embeed Youtube Android Player directly into the app to provide trailers if the user wished to see them.
+- Embeeded Youtube Android Player directly into the app to provide trailers if the user wished to see them.
