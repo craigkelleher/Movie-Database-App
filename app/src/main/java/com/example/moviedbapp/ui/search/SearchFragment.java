@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.SearchView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -23,8 +22,8 @@ public class SearchFragment extends Fragment {
                              ViewGroup container, Bundle savedInstanceState) {
         searchViewModel =
                 new ViewModelProvider(this).get(SearchViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_search, container, false);
-        final TextView textView = root.findViewById(R.id.text_search);
+        View root = inflater.inflate(R.layout.search, container, false);
+        final TextView textView = root.findViewById(R.id.edit_message);
         searchViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {

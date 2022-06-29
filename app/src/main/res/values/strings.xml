@@ -11,9 +11,17 @@
     <string name="genre4">Fantasy</string>
     <string name="genre5">Comedy</string>
     <string name="genre6">Science Fiction</string>
+    <string name="title_activity_imdbsearch_result">Search Results</string>
 
     <string name="cast">Cast</string>
     <string name="back">Back</string>
+    <string name="app_label">MovieDBApp</string>
+    <string name="search_hint">Please enter the name of a movie to search</string>
+    <string name="search_title">Click here to Search</string>
+    <string name="popular">Popular</string>
+    <string name="most_popular_movies">Most Popular Movies</string>
+    <string name="button_send">Search</string>
+    <string name="edit_message">Enter a Movie Title to Search</string>
     <string name="trailer">Watch Trailer</string>
 
     <!-- Strings for genre preference -->
@@ -32,6 +40,5 @@
     <string name="pref_comedy_title">Comedy</string>
     <string name="pref_scifi_key" translatable="false">pref_scifi</string>
     <string name="pref_scifi_title">Science Fiction</string>
-
 
 </resources>

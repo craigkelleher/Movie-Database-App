@@ -32,7 +32,6 @@ public class GenreMovieRes implements Parcelable {
     public List<Movie> getMovies() {
         return results;
     }
-
     public void setResults(List<Movie> results) {
         this.results = results;
     }
